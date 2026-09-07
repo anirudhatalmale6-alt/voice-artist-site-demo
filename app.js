@@ -15,6 +15,7 @@
       src: "audio/jarred-commercial-demo.mp3" }
   ];
 
+  var INBOX = "Jarredatvo@gmail.com";   // where the contact form sends people
   var BARS = 120;             // peak buckets per waveform
   var ctxAudio = null;        // shared AudioContext, created on first gesture
   var analyser = null;
@@ -430,10 +431,28 @@
         note.classList.remove("ok");
         return;
       }
+      /* No server behind this page, so the form hands off to the sender's own
+         mail app with everything already written. */
+      var type = form.querySelector("#f-type").value;
+      var deadline = form.querySelector("#f-deadline").value.trim();
+      var msg = form.querySelector("#f-msg").value.trim();
+      var subject = "Voiceover enquiry — " + type + (deadline ? " — " + deadline : "");
+      var body =
+        "Name: " + name.value.trim() + "\n" +
+        "Email: " + email.value.trim() + "\n" +
+        "Job type: " + type + "\n" +
+        "Deadline: " + (deadline || "not given") + "\n\n" +
+        (msg || "(no details added)") + "\n";
+
+      window.location.href = "mailto:" + INBOX +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
       var btn = form.querySelector(".btn-submit");
       btn.classList.add("sent");
-      btn.querySelector("span").textContent = "Enquiry captured";
-      note.textContent = "Demo only — nothing was sent. Give me an inbox address and this posts straight to it.";
+      btn.querySelector("span").textContent = "Opening your mail app";
+      note.innerHTML = "If nothing opened, email " +
+        '<a href="mailto:' + INBOX + '">' + INBOX + "</a> directly.";
       note.classList.add("ok");
     });
   }
