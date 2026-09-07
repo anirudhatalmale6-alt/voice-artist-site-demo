@@ -1,15 +1,15 @@
-# Voice Actor Website — demo build
+# Jarred Thornhill — Voice Actor
 
-A single-page, fully responsive site for a professional voice actor.
-Everything here is placeholder content built for client review.
+A single-page, fully responsive site for Jarred Thornhill, an American voice
+actor based in St. Louis, Missouri.
 
 ## What's in it
 
 - Hero with a live canvas waveform that reacts to the audio being played
-- Five demo-reel players with real decoded waveforms, click/drag to scrub,
+- Demo-reel players with real decoded waveforms, click/drag to scrub,
   one-at-a-time playback, download links
-- About section with a spec table (booth, mic, DAW, delivery)
-- Testimonial cards
+- About section
+- Testimonial
 - Booking form with client-side validation
 - Mobile nav, scroll reveals, reduced-motion support
 
@@ -23,13 +23,12 @@ Drops onto any host — including plain shared hosting — as-is.
     index.html      markup
     styles.css      all styling
     app.js          players, waveform rendering, form, nav
-    audio/          placeholder reels (synthesised, not real voice work)
-    images/         placeholder portrait illustration
+    audio/          demo reels
+    images/         portrait
 
 ## Swapping in real content
 
-- Reels: replace the files in `audio/`, then edit the `REELS` array at the top
-  of `app.js` (title, tag, description, filename).
-- Copy: all text lives in `index.html`. Placeholder passages are wrapped in
-  `<span class="ph">`.
+- Reels: add files to `audio/`, then add an entry to the `REELS` array at the
+  top of `app.js` (title, tag, description, filename).
+- Copy: all text lives in `index.html`.
 - Colours and type: the variables at the top of `styles.css`.

@@ -316,7 +316,12 @@ h1 .line:last-child{
 .about-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(2rem,6vw,5.5rem);align-items:start}
 .portrait{position:sticky;top:6rem}
 .portrait-frame{position:relative;border:1px solid var(--line);overflow:hidden;background:var(--panel)}
-.portrait-frame img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:contrast(1.06) saturate(1.05)}
+/* height:auto is load-bearing — the img's height attribute is a presentation
+   hint that otherwise beats aspect-ratio and stretches the crop */
+.portrait-frame img{
+  width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;
+  filter:contrast(1.06) saturate(1.04) brightness(.96);
+}
 .portrait-frame::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg,transparent 55%,rgba(11,10,9,.85));
@@ -374,6 +379,26 @@ h1 .line:last-child{
 .quote footer{display:flex;flex-direction:column;gap:.1rem;border-top:1px solid var(--line-2);padding-top:1rem}
 .quote footer b{font-size:.92rem;font-weight:700}
 .quote footer span{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--ink-faint)}
+
+/* single featured quote — used while there is only one testimonial */
+.quote-feature{
+  max-width:760px;margin-inline:auto;text-align:center;
+  padding:clamp(2rem,4.5vw,3.4rem) clamp(1.5rem,4vw,3rem);
+}
+.quote-feature::before{right:auto;left:50%;transform:translateX(-50%);top:-.22em;font-size:9rem}
+.quote-feature p{
+  font-size:clamp(1.3rem,2.6vw,2.05rem);line-height:1.36;position:relative;z-index:1;
+}
+.quote-feature footer{align-items:center;border-top:0;padding-top:0}
+.quote-feature footer::before{
+  content:"";width:36px;height:1px;background:var(--amber);margin:0 auto 1rem;display:block;
+}
+
+.reels-more{
+  margin:clamp(1.6rem,3vw,2.4rem) 0 0;font-size:.9rem;color:var(--ink-faint);max-width:52ch;
+}
+
+.contact-list a em{font-style:normal;font-family:var(--mono);font-size:.7rem;color:var(--ink-faint)}
 
 .logos{margin-top:clamp(3rem,7vw,5rem);text-align:center}
 .logos-label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 1.6rem}

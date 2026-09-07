@@ -10,21 +10,9 @@
 
   /* ── the reels. Swap src/title/tag/desc when the real files land ── */
   var REELS = [
-    { id: "commercial", title: "Commercial Reel", tag: "Broadcast",
-      desc: "Warm, conversational, brand-led. TV, radio and online spots.",
-      src: "audio/commercial.mp3" },
-    { id: "narration", title: "Narration & Documentary", tag: "Long form",
-      desc: "Measured, low-register storytelling that holds for the full hour.",
-      src: "audio/narration.mp3" },
-    { id: "character", title: "Character & Animation", tag: "Range",
-      desc: "Four voices, one session — hero, sidekick, villain and the small furious one.",
-      src: "audio/character.mp3" },
-    { id: "elearning", title: "E-learning & Corporate", tag: "Clarity",
-      desc: "Even pace, clean diction, consistent across a hundred modules.",
-      src: "audio/elearning.mp3" },
-    { id: "promo", title: "Promo & Imaging", tag: "Energy",
-      desc: "Punchy station imaging and trailer reads with a hard sell that still breathes.",
-      src: "audio/promo.mp3" }
+    { id: "commercial", title: "Commercial Demo", tag: "Commercial",
+      desc: "Jarred's current commercial reel.",
+      src: "audio/jarred-commercial-demo.mp3" }
   ];
 
   var BARS = 120;             // peak buckets per waveform
@@ -330,8 +318,8 @@
     var p = players[0];
     var on = p && p.playing;
     heroBtn.classList.toggle("playing", !!on);
-    heroBtn.querySelector(".btn-txt").textContent = on ? "Pause the showreel" : "Play the showreel";
-    if (heroTime && p) heroTime.textContent = on ? fmt(p.el.currentTime) : (p.duration ? fmt(p.duration) : "0:32");
+    heroBtn.querySelector(".btn-txt").textContent = on ? "Pause the commercial demo" : "Play the commercial demo";
+    if (heroTime && p) heroTime.textContent = on ? fmt(p.el.currentTime) : (p.duration ? fmt(p.duration) : "1:38");
     ensureLoop();
   }
   if (heroBtn) {

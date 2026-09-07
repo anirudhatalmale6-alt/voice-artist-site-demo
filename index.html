@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Voice Actor — Demo Site</title>
-<meta name="description" content="Demo build of a professional voice actor website: reels, credits, testimonials and booking.">
+<title>Jarred Thornhill — Voice Actor</title>
+<meta name="description" content="Jarred Thornhill is an American voice actor based in St. Louis, Missouri. Listen to his commercial demo and get in touch.">
+<meta property="og:title" content="Jarred Thornhill — Voice Actor">
+<meta property="og:description" content="American voice actor based in St. Louis, Missouri. Commercial demo and bookings.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/jarred.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,7 +19,7 @@
 
 <div class="demo-strip" id="demoStrip">
   <span class="dot"></span>
-  <p>Demo build — all names, copy, audio and testimonials are placeholder content.</p>
+  <p>Preview — photo, bio, commercial demo and testimonial are Jarred&rsquo;s. The contact email and phone are still placeholders.</p>
   <button type="button" aria-label="Dismiss notice" id="demoStripClose">&times;</button>
 </div>
 
@@ -24,13 +28,13 @@
 <header class="topbar" id="topbar">
   <a class="mark" href="#top">
     <span class="mark-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-    <span class="mark-text">Your&nbsp;Name</span>
+    <span class="mark-text">Jarred&nbsp;Thornhill</span>
   </a>
   <nav>
-    <a href="#reels">Reels</a>
+    <a href="#reels">Demo</a>
     <a href="#about">About</a>
-    <a href="#words">Testimonials</a>
-    <a href="#booking" class="nav-cta">Book</a>
+    <a href="#words">Testimonial</a>
+    <a href="#booking" class="nav-cta">Contact</a>
   </nav>
   <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
 </header>
@@ -42,35 +46,35 @@
     <canvas class="hero-wave" id="heroWave" aria-hidden="true"></canvas>
     <div class="hero-inner">
       <p class="eyebrow reveal">
-        <span class="tick"></span>Voice actor &nbsp;·&nbsp; Broadcast &amp; narration &nbsp;·&nbsp; Studio in <em>[city]</em>
+        <span class="tick"></span>Voice actor &nbsp;·&nbsp; American English &nbsp;·&nbsp; St.&nbsp;Louis, Missouri
       </p>
       <h1 class="reveal d1">
-        <span class="line">Your</span>
-        <span class="line ital">Name</span>
-        <span class="line">Here</span>
+        <span class="line">Jarred</span>
+        <span class="line ital">Thornhill</span>
+        <span class="line">voice actor</span>
       </h1>
       <p class="lede reveal d2">
-        A voice for the brands that need to be believed — warm, precise, and delivered
-        broadcast-ready from a treated home booth. <span class="ph">This paragraph is placeholder copy; your real
-        positioning line goes here.</span>
+        A fan first — years of anime and video games, then the conventions where meeting
+        working voice actors turned a favourite thing into the job.
       </p>
       <div class="hero-actions reveal d3">
-        <button class="btn-play" id="heroPlay" data-src="audio/commercial.mp3">
+        <button class="btn-play" id="heroPlay">
           <span class="btn-ico" aria-hidden="true"></span>
-          <span class="btn-txt">Play the showreel</span>
-          <span class="btn-meta" id="heroTime">0:32</span>
+          <span class="btn-txt">Play the commercial demo</span>
+          <span class="btn-meta" id="heroTime">1:38</span>
         </button>
-        <a class="btn-ghost" href="#booking">Check availability</a>
+        <a class="btn-ghost" href="#booking">Get in touch</a>
       </div>
       <ul class="hero-facts reveal d4">
-        <li><b>24h</b><span>Typical turnaround</span></li>
-        <li><b>Source&nbsp;Connect</b><span>+ Zoom / Cleanfeed</span></li>
-        <li><b>WAV&nbsp;/&nbsp;MP3</b><span>Edited &amp; mastered</span></li>
+        <li><b>St.&nbsp;Louis, MO</b><span>Based in</span></li>
+        <li><b>American English</b><span>Voice</span></li>
+        <li><b>Commercial</b><span>Demo available now</span></li>
       </ul>
     </div>
+
     <div class="hero-aside">
-      <span class="live"><i></i>Booking now</span>
-      <span class="hero-aside-txt">Diary open for [month] &nbsp;·&nbsp; Studio time same week</span>
+      <span class="live"><i></i>Open to work</span>
+      <span class="hero-aside-txt">Scripts, auditions and enquiries welcome</span>
     </div>
 
     <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><i></i></div>
@@ -79,27 +83,28 @@
   <!-- ── TICKER ───────────────────────────────────────────────── -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Commercial</span><i>◆</i><span>Narration</span><i>◆</i><span>E-learning</span><i>◆</i>
-      <span>Character &amp; animation</span><i>◆</i><span>Explainer</span><i>◆</i><span>Audiobook</span><i>◆</i>
-      <span>IVR &amp; telephony</span><i>◆</i><span>Documentary</span><i>◆</i>
-      <span>Commercial</span><i>◆</i><span>Narration</span><i>◆</i><span>E-learning</span><i>◆</i>
-      <span>Character &amp; animation</span><i>◆</i><span>Explainer</span><i>◆</i><span>Audiobook</span><i>◆</i>
-      <span>IVR &amp; telephony</span><i>◆</i><span>Documentary</span><i>◆</i>
+      <span>Jarred Thornhill</span><i>◆</i><span>Voice actor</span><i>◆</i><span>St. Louis, Missouri</span><i>◆</i>
+      <span>Jarred Thornhill</span><i>◆</i><span>Voice actor</span><i>◆</i><span>St. Louis, Missouri</span><i>◆</i>
+      <span>Jarred Thornhill</span><i>◆</i><span>Voice actor</span><i>◆</i><span>St. Louis, Missouri</span><i>◆</i>
+      <span>Jarred Thornhill</span><i>◆</i><span>Voice actor</span><i>◆</i><span>St. Louis, Missouri</span><i>◆</i>
     </div>
   </div>
 
-  <!-- ── REELS ────────────────────────────────────────────────── -->
+  <!-- ── DEMO ─────────────────────────────────────────────────── -->
   <section class="section reels" id="reels">
     <div class="sec-head reveal">
       <p class="sec-num">01</p>
       <h2>Listen</h2>
-      <p class="sec-note">Five reels, each under a minute. Click anywhere on a waveform to scrub.
-        <span class="ph">Placeholder audio — your reels drop straight in.</span></p>
+      <p class="sec-note">Click anywhere on the waveform to scrub, or use the download link to
+        keep a copy of the file.</p>
     </div>
 
     <div class="players" id="players">
-      <!-- players are built by app.js from the data below -->
+      <!-- built by app.js from the REELS array -->
     </div>
+
+    <p class="reels-more reveal">More demos slot in here as they&rsquo;re recorded — each one gets its
+      own player, waveform and download.</p>
   </section>
 
   <!-- ── ABOUT ────────────────────────────────────────────────── -->
@@ -107,12 +112,11 @@
     <div class="about-grid">
       <div class="portrait reveal">
         <div class="portrait-frame">
-          <img src="images/portrait.svg" alt="Placeholder for the voice actor's studio portrait">
-          <span class="portrait-tag">your photo here</span>
+          <img src="images/jarred.jpg" alt="Jarred Thornhill in his home studio, beside his microphone" width="1000" height="1250">
         </div>
         <div class="portrait-cap">
           <span class="mono">Fig. 01</span>
-          <span>Booth, [city] — replace with your headshot or studio shot.</span>
+          <span>Jarred at the mic, St. Louis, Missouri.</span>
         </div>
       </div>
 
@@ -122,106 +126,56 @@
           <h2>About</h2>
         </div>
         <p class="big reveal d1">
-          <span class="ph">Placeholder bio.</span> Fifteen years behind the glass, and the same job every
-          time: make the words sound like someone means them.
+          Jarred Thornhill is an American voice actor based in St. Louis, Missouri.
         </p>
         <p class="reveal d2">
-          I started in radio imaging, moved into long-form narration, and now split my week between
-          commercial campaigns, corporate explainers and the occasional animated villain. Clients tend to
-          come back because sessions are calm, direction is taken without ego, and files land clean —
-          edited, levelled and named the way your editor asked for.
+          He came to it as a fan. Years of watching anime and playing video games, then convention
+          after convention where the voices behind those characters turned out to be people you could
+          actually stand and talk to. Meeting them is what moved it from something he loved to something
+          he wanted to do.
         </p>
         <p class="reveal d3">
-          <span class="ph">Two or three paragraphs like this is the right length. Send me rough notes and I will
-          shape the wording.</span>
+          He is building his reel now, starting with the commercial demo above. Scripts, auditions and
+          enquiries are all welcome.
         </p>
-
-        <dl class="specs reveal d4">
-          <div><dt>Booth</dt><dd>Treated home studio, broadcast noise floor</dd></div>
-          <div><dt>Mic</dt><dd>[Your microphone] into [your interface]</dd></div>
-          <div><dt>DAW</dt><dd>[Your DAW] — punch-and-roll, ISDN-free</dd></div>
-          <div><dt>Direct</dt><dd>Source Connect · Cleanfeed · Zoom · Teams</dd></div>
-          <div><dt>Delivery</dt><dd>WAV 48k/24 or MP3, edited &amp; mastered</dd></div>
-          <div><dt>Accents</dt><dd>[List the accents you genuinely deliver]</dd></div>
-        </dl>
       </div>
     </div>
   </section>
 
-  <!-- ── TESTIMONIALS ─────────────────────────────────────────── -->
+  <!-- ── TESTIMONIAL ──────────────────────────────────────────── -->
   <section class="section words" id="words">
     <div class="sec-head reveal">
       <p class="sec-num">03</p>
       <h2>Kind words</h2>
-      <p class="sec-note">Real quotes go here — the line, the person, their company.
-        <span class="ph">Everything below is placeholder.</span></p>
     </div>
 
-    <div class="quote-grid">
-      <blockquote class="quote reveal">
-        <p>Booked on a Friday, cut and delivered by Saturday lunchtime, and the client signed off on the
-          first take. That almost never happens.</p>
-        <footer><b>Client Name</b><span>Creative Director, Agency Name</span></footer>
-      </blockquote>
-      <blockquote class="quote reveal d1">
-        <p>Took direction beautifully. We asked for &ldquo;less announcer, more neighbour&rdquo; and got it
-          in one pass.</p>
-        <footer><b>Client Name</b><span>Producer, Production Company</span></footer>
-      </blockquote>
-      <blockquote class="quote reveal d2">
-        <p>Forty modules of e-learning without a single consistency note. The audio came back named exactly
-          to spec.</p>
-        <footer><b>Client Name</b><span>L&amp;D Lead, Company Name</span></footer>
-      </blockquote>
-      <blockquote class="quote reveal d3">
-        <p>The range surprised us. Same session gave us the straight read and the character we didn&rsquo;t
-          know we needed.</p>
-        <footer><b>Client Name</b><span>Head of Content, Brand Name</span></footer>
-      </blockquote>
-    </div>
-
-    <div class="logos reveal">
-      <p class="mono logos-label">Selected clients</p>
-      <ul>
-        <li>Client&nbsp;One</li><li>Client&nbsp;Two</li><li>Client&nbsp;Three</li>
-        <li>Client&nbsp;Four</li><li>Client&nbsp;Five</li><li>Client&nbsp;Six</li>
-      </ul>
-      <p class="logos-note ph">Swap for real logos, or delete this row entirely — your call.</p>
-    </div>
+    <blockquote class="quote quote-feature reveal d1">
+      <p>Jarred is not only dedicated and consistent, but he is also exceptionally talented and
+        hard working.</p>
+      <footer><b>Alan Shires</b><span>The Voice Actor College</span></footer>
+    </blockquote>
   </section>
 
-  <!-- ── BOOKING ──────────────────────────────────────────────── -->
+  <!-- ── CONTACT ──────────────────────────────────────────────── -->
   <section class="section booking" id="booking">
     <div class="booking-grid">
       <div class="booking-left">
         <div class="sec-head reveal">
           <p class="sec-num">04</p>
-          <h2>Book the voice</h2>
+          <h2>Get in touch</h2>
         </div>
-        <p class="reveal d1">Send the script, the deadline and the usage. You get a quote back the same
-          working day, and most jobs are recorded within 24 hours of approval.</p>
+        <p class="reveal d1">Send the script, the deadline and where it will run, and Jarred will come
+          straight back to you.</p>
 
         <ul class="contact-list reveal d2">
           <li>
             <span class="mono">Email</span>
-            <a href="#" data-ph>your@email.com</a>
+            <a href="#" data-ph>your@email.com <em>(placeholder)</em></a>
           </li>
           <li>
-            <span class="mono">Phone</span>
-            <a href="#" data-ph>+00 0000 000000</a>
+            <span class="mono">Based in</span>
+            <span>St. Louis, Missouri &nbsp;·&nbsp; Central Time</span>
           </li>
-          <li>
-            <span class="mono">Hours</span>
-            <span>Mon–Fri, 09:00–18:00 [timezone]</span>
-          </li>
-        </ul>
-
-        <ul class="social reveal d3">
-          <li><a href="#" data-ph>Voice123</a></li>
-          <li><a href="#" data-ph>Voices.com</a></li>
-          <li><a href="#" data-ph>IMDb</a></li>
-          <li><a href="#" data-ph>LinkedIn</a></li>
-          <li><a href="#" data-ph>Instagram</a></li>
         </ul>
       </div>
 
@@ -238,12 +192,12 @@
           <label for="f-type">What&rsquo;s the job?</label>
           <div class="select-wrap">
             <select id="f-type" name="type">
-              <option>Commercial / broadcast</option>
-              <option>Corporate &amp; explainer</option>
-              <option>E-learning</option>
-              <option>Narration / documentary</option>
-              <option>Character &amp; animation</option>
-              <option>Audiobook</option>
+              <option>Commercial</option>
+              <option>Animation / character</option>
+              <option>Video game</option>
+              <option>Narration</option>
+              <option>E-learning / corporate</option>
+              <option>Audition request</option>
               <option>Something else</option>
             </select>
           </div>
@@ -254,14 +208,14 @@
         </div>
         <div class="field">
           <label for="f-msg">Script, length, usage</label>
-          <textarea id="f-msg" name="message" rows="4" placeholder="Word count, territory, term, and where it will run."></textarea>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Word count, where it will run, and any direction."></textarea>
         </div>
         <button class="btn-submit" type="submit">
           <span>Send enquiry</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
         </button>
-        <p class="form-note" id="formNote">Demo form — not wired to an inbox yet. Tell me where enquiries
-          should land and I&rsquo;ll connect it.</p>
+        <p class="form-note" id="formNote">Not wired to an inbox yet — send me the email address you
+          want enquiries to land in and I&rsquo;ll connect it.</p>
       </form>
     </div>
   </section>
@@ -269,8 +223,8 @@
 
 <footer class="foot">
   <div class="foot-wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-  <p class="foot-name">Your Name Here</p>
-  <p class="mono foot-meta">Voice actor · [City] · Demo build for review</p>
+  <p class="foot-name">Jarred Thornhill</p>
+  <p class="mono foot-meta">Voice actor · St. Louis, Missouri</p>
   <a class="foot-top" href="#top">Back to top ↑</a>
 </footer>
 
